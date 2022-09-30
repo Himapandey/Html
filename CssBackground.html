@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css background</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #div {
+        background-color: teal;
+        padding: 1px;
+        text-align: center;
+      }
+      #img {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px black;
+        padding: 10px;
+        background-image: url("./Images/Bags.jpeg");
+        color: black;
+        background-attachment: fixed;
+      }
+      #repeat {
+        width: 900px;
+        height: 600px;
+        box-shadow: 0 0 10px black;
+        background-image: url("./Images/download.jpg");
+        background-repeat: repeat-y;
+      }
+      #position {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px black;
+        background-image: url("./Images/download.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+      #linear {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px black;
+        background: linear-gradient(180deg, black, darkred, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <h1>Background color</h1>
+    </div>
+    <h2>BackGround-Attachment</h2>
+    <div id="img">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste
+        officia qui impedit, nemo iure molestias veniam explicabo libero
+        voluptate tempore corporis voluptates laboriosam rerum obcaecati velit
+        sed voluptatum voluptas non nobis adipisci itaque. Hic nisi delectus
+        assumenda porro ipsa. Et necessitatibus aliquid officia ipsum facere
+        quis cum odit? Beatae?
+      </p>
+    </div>
+    <h2>BackGround-Repeat</h2>
+    <div id="repeat"></div>
+    <h2>
+      BackGround-Position
+      <div id="position"></div>
+    </h2>
+    <h2>Linear Gradient</h2>
+    <div id="linear"></div>
+  </body>
+</html>
